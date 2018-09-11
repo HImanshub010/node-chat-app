@@ -8,17 +8,6 @@
 <body>
 	<p>Welcome to chat app</p>
 	<script src="/socket.io/socket.io.js"></script>
-	<script>
-		var socket = io();//used for connecting with server 
-		//used when we are connected to server and connect is one of such event
-		socket.on('connect',()=>{
-			console.log('connected to new user');
-		});
-
-		//it is fired once we are connected to a server
-		socket.on('disconnect',()=>{
-			console.log('disconncted ');
-		});
-	</script>
+	<script src="/js/index.js"></script> 		
 </body>
 </html>
